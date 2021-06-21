@@ -18,9 +18,9 @@ function generatePassword() {
     // var useLower = confirm('Would you like the password to contain lowercase letters?');
     // var useNum = confirm('Would you like the password to contain numbers?');
     // var useSpec = confirm('Would you like the password to contain special characters?');
-    if (passLength < 8 || passLength > 128) {
+    if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
         alert('Please choose between 8 and 128 characters.')
-        return
+        return 'no password generated'
     }
 
     var choiceObject = {
@@ -38,7 +38,7 @@ function generatePassword() {
         choiceObject.spec === false
     ) {
         alert('Please choose to use at least one type of character!');
-        return;
+        return 'no password generated';
     }
 
     var candidates = [];
