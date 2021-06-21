@@ -18,3 +18,5 @@ The javascript as far as generating the new password is completely my own, howev
 ## License
 
 Again the html, css, and reactivity of the button all belong to UCSD Extension Coding Bootcamp. 
+
+![screenshot of password generator homepage](./2021-06-21.png)
